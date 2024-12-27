@@ -1,0 +1,19 @@
+{
+  "name": "si-24-6a",
+  "version": "1.0.0",
+  "description": "- Objetivo\r   - Validar conhecimento em desenvolvimento web;\r   - Validar conhecimento em responsividade com Flexbox e Grid;\r   - Validar conhecimento na escrita de código JS e integração com DOM;\r   - Validar conhecimento no uso de servidor web;\r   - Validar conhecimento de exposição da aplicação para internet pública (usando Ngrok);\r   - Validar conhecimento na utilização de módulos JS;\r   - Validar conhecimento na utilização de bibliotecas externas, instaladas na aplicação;\r   - Validar conhecimento na utilização de APIs externas;\r   - Validar progressão da implementação e organização de trabalho (workflow);\r   - Validar contribuição em grupo num mesmo projeto;",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "revenda",
+    "/",
+    "carro"
+  ],
+  "author": "Gabriel Ramos, Luiz Fernando, Lucas Leandro",
+  "license": "ISC",
+  "dependencies": {
+    "placa-fipe-api": "^1.0.1"
+  }
+}

@@ -1,0 +1,133 @@
+.filter {
+  padding: 10px;
+  text-align: center;
+}
+
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  padding-bottom: 0px;
+  justify-content: center;
+}
+
+.car-card {
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgba(204, 204, 204, 0.226);
+  overflow-y: auto;
+}
+
+.car-card h2 {
+  margin: 0px;
+}
+
+.car-image {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 234, 21, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 5% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+}
+
+.modal-car-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.close {
+  color: rgb(5, 232, 236);
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.add-car-form {
+  left: 15%;
+  width: 70%;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: end;
+  position: relative;
+  background-color: rgba(204, 204, 204, 0.226);
+  overflow-y: auto;
+}
+
+.add-car-form h2 {
+  margin: 0px;
+}
+
+#addCar {
+  position: absolute;
+  left: 50px;
+}
+
+@media (max-width: 768px) {
+  .car-list {
+    justify-content: space-around;
+  }
+
+  .car-card {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .car-image {
+    max-height: 120px;
+  }
+
+  .add-car-form {
+    width: 500px;
+    left: 0;
+    padding: 15px;
+  }
+
+  #addCar {
+    left: 20px;
+  }
+
+  .modal-content {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .modal-car-image {
+    max-height: 200px;
+  }
+
+  .filter {
+    padding: 8px;
+  }
+}

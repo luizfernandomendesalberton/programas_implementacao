@@ -1,0 +1,65 @@
+<div id="visualgrid">
+    <div id="esquerda">
+        <div class="itens">
+            <h3><b>Filtros</b></h3>
+
+            <!-- Filtros básicos -->
+            <p>Marca: <input id="marca" type="text" placeholder="Marca do Veículo"></p>
+            <p>Modelo: <input id="modelo" type="text" placeholder="Modelo do Veículo"></p>
+            <p>Ano: <input id="ano" type="text" placeholder="2000"></p>
+            <p>Localização: <input id="cidadeEstado" type="text" placeholder="Cidade ou Estado"></p>
+            <p>Quilometragem Máxima: <input id="qMaximo" type="text" placeholder="0 km"></p>
+            <p>Quilometragem Mínima: <input id="qMinimo" type="text" placeholder="0 km"></p>
+            <p>Tipo de Veículo:
+                <select id="selecao">
+                    <option value="todos">Todos</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="suv">SUV</option>
+                    <option value="hatch">Hatch</option>
+                    <option value="caminhonete">Caminhonete</option>
+                </select>
+            </p>
+
+            <p>Cor: <input id="cor" type="text" placeholder="Ex.: Vermelho"></p>
+            <p>Potência (em CV): <input id="potencia" type="text" placeholder="Ex.: 100 a 200 CV"></p>
+            <p>Final da Placa: <input id="finalPlaca" type="text" placeholder="Ex.: 5"></p>
+            <p>Ano de Fabricação:
+                <input id="dataInicio" type="text" placeholder="De">
+                <input id="dataFim" type="text" placeholder="Até">
+            </p>
+
+            <h4><b>Preços</b></h4>
+            <p>
+                Com Desconto: <input type="checkbox" id="desc">
+                Usado: <input type="checkbox" id="used">
+                Novos: <input type="checkbox" id="novo">
+            </p>
+
+            <p>Valor Máximo: <input id="vlMaximo" type="text" placeholder="R$ 00.000,00"></p>
+            <p>Valor Mínimo: <input id="vlMinimo" type="text" placeholder="R$ 00.000,00"></p>
+            <p>
+                Mais Vendido: <input type="checkbox" id="maxVenda">
+                Lançamento: <input type="checkbox" id="lancamento">
+            </p>
+            <p>Buscar Placa: <input id="pesquisarPlaca" type="text" placeholder="Informe a placa"></p>
+            <button id="buscarPlaca" class="botao">Buscar Placa</button>
+            <div id="placa-info" style="display: none;"></div>
+            
+            <div class="bots -flex">
+                <button id="applyFilters" class="botao" style="margin-top: 50px;">Aplicar Filtros</button>
+                <button id="resetFilters" class="botao" style="margin-top: 50px;">Redefinir Filtros</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="contexto" style="padding-top: 0px;">
+        <form id="car-form"></form>
+        <section id="car-list" class="car-list" style="padding-top: 0px;"></section>
+    </div>
+    <div id="car-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="car-details"></div>
+        </div>
+    </div>
+</div>

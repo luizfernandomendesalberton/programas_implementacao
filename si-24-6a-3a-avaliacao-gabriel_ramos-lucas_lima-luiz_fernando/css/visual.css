@@ -1,0 +1,46 @@
+#visualgrid {
+    width: 100%;
+    display: grid;
+    color: white;
+    grid-template-columns: 400px 1fr;
+    grid-template-areas:
+        "Coluna Contexto";
+}
+
+#esquerda {
+    grid-area: Coluna;
+    border-right: 2px solid white;
+    border-radius: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(204, 204, 204, 0.226);
+}
+
+.itens{
+    text-align: end;
+}
+
+.itens h3, .itens h4 {
+    text-align: center;
+}
+
+#contexto {
+    grid-area: Contexto;
+    padding: 20px;
+}
+
+#placa-info {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}

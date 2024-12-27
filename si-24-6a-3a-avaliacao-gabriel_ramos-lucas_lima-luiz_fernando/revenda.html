@@ -1,0 +1,25 @@
+<section class="add-car-form">
+  <button id="addCar" class="botao" type="submit">Adicionar Carro</button>
+  <h2>Adicionar Novo Carro</h2>
+  <form id="car-form">
+    <p>
+      Modelo: <input type="text" id="car-model" placeholder="Modelo" required>
+      Marca: <input type="text" id="car-brand" placeholder="Marca" required>
+      Ano: <input type="text" id="car-ano" placeholder="Ano" required>
+    </p>
+    <p>
+      Valor: <input type="text" id="car-price" placeholder="Preço" required>
+      Cor: <input type="text" id="car-cor" placeholder="Cor" required>
+      Quilometragem: <input type="text" id="car-quilo" placeholder="Quilometragem" required>
+    </p>
+  </form>
+</section>
+
+<section id="car-list" class="car-list"></section>
+
+<div id="car-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="car-details"></div>
+  </div>
+</div>
